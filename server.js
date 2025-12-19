@@ -15,7 +15,7 @@ app.use(compression());
 
 // CORS configuration
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://10.225.156.163:3000'],
+  origin: ['http://localhost:3000', 'http://10.225.156.163:3000', /^https:\/\/.*\.vercel\.app$/],
   credentials: true,
   optionsSuccessStatus: 200
 };
